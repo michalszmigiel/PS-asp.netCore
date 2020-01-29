@@ -24,6 +24,7 @@ namespace PS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<IFeedbackRepository, FeedbackRepository>();
 
             services.AddDbContext<PSDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

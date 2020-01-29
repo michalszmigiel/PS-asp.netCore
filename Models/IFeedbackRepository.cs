@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PS.Models
 {
-    interface IFeedbackRepository
+    public interface IFeedbackRepository
     {
         void AddFeedback(Feedback feedback);
     }
